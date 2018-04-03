@@ -8,7 +8,7 @@ DECLARE get_order_id integer;
 DECLARE get_order_detail_id integer;
 
     BEGIN
-    -- Create temp table to hold json data ---
+    -- Create temp table to hold json data ritesh---
 	drop table if exists tmp_orderinserteddata;
 	create temp table tmp_orderinserteddata("id" serial,"order_number" text, "sales_order_line" text, "material_number" text,"error_List" json, "insertedInto_Db" boolean);
 	
