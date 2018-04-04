@@ -1,4 +1,4 @@
-CREATE OR REPLACE FUNCTION public.auto_b2x_cus_number()
+CREATE OR REPLACE FUNCTION public.auto_b2x_cus_number1()
  RETURNS character varying
  LANGUAGE sql
 AS $function$

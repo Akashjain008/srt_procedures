@@ -1,4 +1,4 @@
-CREATE OR REPLACE FUNCTION public.check_in_routing_table_temp(tablename text, columnname text, checkvalues text[])
+CREATE OR REPLACE FUNCTION public.check_in_routing_table_temp1(tablename text, columnname text, checkvalues text[])
  RETURNS TABLE("isValid" integer)
  LANGUAGE plpgsql
 AS $function$
