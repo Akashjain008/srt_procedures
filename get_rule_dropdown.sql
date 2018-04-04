@@ -1,4 +1,4 @@
-CREATE OR REPLACE FUNCTION public.get_rule_dropdown1(OUT "errorTypeData" json[], OUT "eventTypeData" json[])
+CREATE OR REPLACE FUNCTION public.get_rule_dropdown(OUT "errorTypeData" json[], OUT "eventTypeData" json[])
  RETURNS record
  LANGUAGE plpgsql
 AS $function$
