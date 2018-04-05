@@ -4,7 +4,7 @@ CREATE OR REPLACE FUNCTION public.check_in_routing_table(tablename text, columnn
 AS $function$
 DECLARE
 valueCount text;
-dbCount integer;
+dbCount text;
 inValues text[];
 runQuery text;
 BEGIN
@@ -28,9 +28,5 @@ BEGIN
 	else
 		RETURN QUERY select 0;
 	end if;
-	
-	
-		
-	
 END;
 $function$
