@@ -3,7 +3,7 @@ CREATE OR REPLACE FUNCTION public.create_order(arrayorders text)
  LANGUAGE plpgsql
 AS $function$
 DECLARE order_data record;
-DECLARE get_orderhead_id text;
+DECLARE get_orderhead_id integer;
 DECLARE get_order_id integer;
 DECLARE get_order_detail_id integer;
 
