@@ -1,5 +1,5 @@
 CREATE OR REPLACE FUNCTION public.check_job_exist(claimid text, rspid text)
- RETURNS TABLE("claimId" text, "rspId" text, "b2xJobNumber" text, "claimingStatus" text)
+ RETURNS TABLE("claimId" integer, "rspId" text, "b2xJobNumber" text, "claimingStatus" text)
  LANGUAGE plpgsql
 AS $function$
 DECLARE
