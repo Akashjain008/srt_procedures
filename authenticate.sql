@@ -1,4 +1,4 @@
-CREATE OR REPLACE FUNCTION public.authenticate(login text, pass text, OUT "userData" json[], OUT pages json[], OUT "innerPages" json[], OUT projects json[])
+CREATE OR REPLACE FUNCTION public.authenticate(login int4, pass text, OUT "userData" json[], OUT pages json[], OUT "innerPages" json[], OUT projects json[])
  RETURNS record
  LANGUAGE plpgsql
 AS $function$
