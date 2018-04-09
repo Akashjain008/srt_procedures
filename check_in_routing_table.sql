@@ -3,7 +3,7 @@ CREATE OR REPLACE FUNCTION public.check_in_routing_table(tablename text, columnn
  LANGUAGE plpgsql
 AS $function$
 DECLARE
-valueCount int4;
+valueCount text;
 dbCount text;
 inValues text[];
 runQuery text;
